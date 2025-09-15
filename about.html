@@ -1,46 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — Algorithm Intelligence</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b132b">
-  <meta name="description" content="Algorithm Intelligence — we design and run AI research consortiums: governance, funding, IP frameworks, and applied research programs.">
-  <meta property="og:site_name" content="Algorithm Intelligence">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://dummyimage.com/1200x630/0b132b/fafafa&text=Algorithm+Intelligence">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header">
-  <a class="logo" href="/"><img src="/assets/logo.svg" alt="Algorithm Intelligence logo" width="36" height="36"> Algorithm Intelligence</a>
-  <nav>
-    <a href="/about.html">About</a>
-    <a href="/services.html">Services</a>
-    <a href="/research.html">Research</a>
-    <a href="/join.html">Join</a>
-    <a class="btn" href="/contact.html">Contact</a>
-  </nav>
-</header>
-<main class="container">
-  <h1>About</h1>
-  <p>Algorithm Intelligence designs and runs collaborative AI research programs. Our team blends experience from academia, industry R&D, and venture—bridging strategy and execution.</p>
-  <h2>Principles</h2>
-  <ul>
-    <li>Open, transparent governance</li>
-    <li>Responsible AI by default</li>
-    <li>Outcome‑driven programs with measurable impact</li>
-  </ul>
-</main>
-<footer class="site-footer">
-  <div>
-    <strong>Algorithm Intelligence</strong> — AI research consortiums development
-    <br>© 2025 Algorithm Intelligence · <a href="/contact.html">Get in touch</a>
-  </div>
-</footer>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Algorithm Intelligence logo" />
+      <span>Algorithm <strong>Intelligence</strong></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav" class="nav">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="research.html">Research</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="content">
+    <h1>About</h1>
+    
+<p>Algorithm Intelligence partners with universities, startups, and corporates to deliver collaborative R&amp;D that matters. We bring experience in structuring IP‑safe collaboration, neutral governance, and scalable program delivery.</p>
+<ul>
+  <li>Neutral operator for multi‑party research programs</li>
+  <li>Strong IP frameworks and participation agreements</li>
+  <li>Hands‑on delivery with science‑first product thinking</li>
+</ul>
+
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Algorithm Intelligence · <a href="mailto:hello@algorithmintelligence.store">hello@algorithmintelligence.store</a></p>
+  </footer>
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function(){ const nav = document.getElementById('nav'); const open = this.getAttribute('aria-expanded') === 'true'; this.setAttribute('aria-expanded', String(!open)); nav.classList.toggle('open'); });
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
